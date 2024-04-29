@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    background-color: #7e6d63;
+}
+
+:root{
+    --text-color: rgba(22, 22, 22, 0.007);
+    --hover-color: hsla(0, 0%, 100%, 0.226);
+    --bg-color: rgb(0, 0, 0);
+}
+
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #000000;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: var(--text-color);
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--bg-color);
+}
+
+.main{
+    overflow-x: hidden;
+}
+ 
+header {
+    max-width: 100%;
+    padding: 1% 4%;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    background-color: #67685f;
+    position: absolute;
+}
+
+   header {
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #67685f;
+    box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.466);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30%; /* Defina a largura do logotipo conforme necessário */
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10% 15%;
+    margin-inline: 20%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a:hover {
+    color: #948b8b;
+}
+
+.nav-links li:hover{
+    color: white;
+    transition: 1s;
+}
+                                     
+
+
+.profile-pic{
+    width: 60px;
+    border-radius: 80%;
+    margin-top: 4%;
+    border: 1px solid black;
+}
+
+
+
+
+.dropdown-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #52534af1;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10% 15%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    color: white;
+  }
+
+  .dropdown-content .drop {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10% 15%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+  }
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+
+
+.shop-container{
+    display: grid;
+    margin-top: 9rem;
+    grid-template-columns: repeat(5, 164px);
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+.shop-container .box{
+    position: relative;
+    padding: 10px;
+    background: #2b2a2a;
+    box-shadow: 3px 3px 10px 3px rgba(17, 17, 15, 0.671);
+    border-radius: 0px;
+    height: 190px;
+    margin: 3%;
+    display: grid;
+    background-color: #24232323;
+}
+
+.shop-container .box img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    
+}
+
+
+.shop-container .box h3{
+    font-size: 0.9rem;
+}
+
+.shop-container .box span{
+    font-weight: 500;
+}
+
+
+.shop-container .box .bx{
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0.8rem;
+    right: 0.8rem;
+    padding: 10px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer; 
+}
+
+.shop-container .box .bx:hover{
+    background: var(--hover-color);
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+
+
+
+.btn span, i{
+    background-color: transparent;
+}
+
+
+
+
+@media screen and (min-width: 1400px) {
+    
+    .shop-container{
+        display: grid;
+        margin-top: 9rem;
+        grid-template-columns: repeat(6, 164px);
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+    
+    .shop-container{
+        display: grid;
+        margin-top: 9rem;
+        grid-template-columns: repeat(7, 164px);
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    
+    .shop-container{
+        display: grid;
+        margin-top: 9rem;
+        grid-template-columns: repeat(8, 164px);
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+}
+
+@media screen and (min-width: 1800px) {
+    
+    .shop-container{
+        display: grid;
+        margin-top: 9rem;
+        grid-template-columns: repeat(9, 164px);
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+}

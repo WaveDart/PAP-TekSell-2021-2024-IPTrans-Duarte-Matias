@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7e6d63;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 30px;
+    border-collapse: collapse;
+    background-color: #ffffff00;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.774);
+}
+
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+thead {
+    background-color: #f2f2f200;
+}
+
+
+th {
+    background-color: #67685f;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.prod{
+    border-top-left-radius: 20px;
+}
+
+.act{
+    border-top-right-radius: 20px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f900;
+}
+
+
+tfoot {
+    font-weight: bold;
+}
+
+
+tfoot td {
+    padding-top: 10px;
+    border-top: 2px solid #333;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.shop a{
+    color: black;
+}
+
+
+.checkout a{
+    color: black;
+}
+
+.shop:hover{
+    background-color: #d1d1d1;
+}
+
+
+.checkout:hover{
+    background-color: #d1d1d1;
+}
+
+.checkout{
+    color: black;
+    border-radius: 20px;
+    border: 0px;
+}
+
+
+.shop{
+    color: black;
+    border-radius: 20px;
+    border: 0px;
+}

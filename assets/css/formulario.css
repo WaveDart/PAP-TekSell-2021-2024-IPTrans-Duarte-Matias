@@ -1,0 +1,88 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    background-color: #7E6D63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura total da tela */
+}
+
+h2{
+    text-align: center;
+    color: rgb(212, 212, 212);
+}
+
+.formulario {
+    background-image: url(../img/logohq.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.274);
+    width: 30%;
+    height: 80%;
+    border-radius: 1%;
+}
+
+.maindiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+
+.divisoes {
+    margin: 8%;
+    width: 83%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.divisoes input{
+    height: 10%;
+    width: 90%;
+    background-color: #f0f8ff9a;
+    border: 1px solid black;
+}
+
+.divisoes textarea{
+    resize: none;
+    height: 70%;
+    width: 90%;
+    background-color: #f0f8ff9a;
+    border: 1px solid black;
+}
+
+.divisoes button, a {
+    padding: 5%;
+    padding-inline: 10%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisoes button{
+    padding: 5%;
+    padding-inline: 10%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.589);    
+    border: 0.5px solid black;
+}
+
+select, option{
+    background-color: #f0f8ff9a;
+    border: 1px solid black;
+}
